@@ -12,7 +12,9 @@
 
 # To set up the program do:
 # /*sudo apt install git -y
-# git clone https://github.com/kriston-dev/smart-fire-truck.git
+# git clone --filter=blob:none --no-checkout https://github.com/kriston-dev/smart-fire-truck.git
+#cd smart-fire-truck
+#git sparse-checkout set src
 # to clone the program 
 # onto the raspberry pi.*\
 
@@ -24,6 +26,9 @@
 # deleting the yolo-env file, the download is long *\
 # TMPDIR=~/pip-tmp pip install ultralytics /* to download the ultralytics library for YOLO object detection.*\
 # To activate ultralytic you must be activated to run it
+
+# /*To train the model:
+# yolo detect train model=yolo11n.pt data=src/landmarks/flowervase/data.yaml epochs=50 imgsz=640*\
 
 # Libraries
 from picamera2 import Picamera2
