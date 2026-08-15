@@ -1,7 +1,11 @@
 #Name: Kriston Rickman
 #Date: 08/13/26
 #V1.00
-#Notes: Testing if the camera works with the picamera2 library and if the camera is hooked properly
+#Notes: /*After testing, github does connect to the
+#raspberry pi 3 B+ and program v1.00 does run well.*\
+
+# /*Testing if the camera works with the picamera2
+#library and if the camera is hooked properly.*\
 
 
 from picamera2 import Picamera2
