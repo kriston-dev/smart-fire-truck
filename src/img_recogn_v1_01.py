@@ -10,8 +10,20 @@
 # /*sudo apt install -y python3-picamera2 to operate the
 # camera through the DSI connectors.*\
 
-# /*sudo apt install git -y to clone the program onto the
-# raspberry pi.*\
+# To set up the program do:
+# /*sudo apt install git -y
+# git clone https://github.com/kriston-dev/smart-fire-truck.git
+# to clone the program 
+# onto the raspberry pi.*\
+
+# /*From the home directory do:
+#python3 -m venv --system-site-packages yolo-env to create a virtual environment
+# source ~/yolo-env/bin/activate to activate
+# mkdir -p ~/pip-tmp to create a temporary directory for pip to use due to errors with the raspberry pi and pip.*\
+# /* Download the ultralytic last incase the need of
+# deleting the yolo-env file, the download is long *\
+# TMPDIR=~/pip-tmp pip install ultralytics /* to download the ultralytics library for YOLO object detection.*\
+# To activate ultralytic you must be activated to run it
 
 # Libraries
 from picamera2 import Picamera2
